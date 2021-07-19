@@ -90,56 +90,56 @@
 
 //CALLBACK
 
-addition=(a,b,callback) =>{
+// addition=(a,b,callback) =>{
 
-    callback(a+b)
-}
-
-addition(10,30,(sum)=>{
-    console.log(sum);
-})
-
-
-
-
-
-
-
-
-
-
-// add=(a,b,callback) =>{
 //     callback(a+b)
 // }
 
-// sub=(a,b,callback) =>{
-//     callback(a-b)
-// }
-
-// mult=(a,b,call) =>{
-//     call(a*b)
-// }
-
-// percentage=(a,b,callback) =>{
-//     callback(a*b/100)
-// }
-
-
-// add(2,4,(sumadd)=>{
-//     console.log(sumadd)
-
-//     sub(sumadd,1,(sumsub)=>{
-//         console.log(sumsub);
-
-//         mult(sumsub,2,(summult)=>{
-//             console.log(summult);
-
-//             percentage(summult,75,(result)=>{
-//                 console.log(result);
-//             })
-//         })
-//     })
+// addition(10,30,(sum)=>{
+//     console.log(sum);
 // })
+
+
+
+
+
+
+
+
+
+
+add=(a,b,callback) =>{
+    callback(a+b)
+}
+
+sub=(a,b,callback) =>{
+    callback(a-b)
+}
+
+mult=(a,b,call) =>{
+    call(a*b)
+}
+
+percentage=(a,b,callback) =>{
+    callback(a*b/100)
+}
+
+
+add(2,4,(sumadd)=>{
+    console.log(sumadd)
+
+    sub(sumadd,1,(sumsub)=>{
+        console.log(sumsub);
+
+        mult(sumsub,2,(summult)=>{
+            console.log(summult);
+
+            percentage(summult,75,(result)=>{
+                console.log(result);
+            })
+        })
+    })
+})
 
 
 
